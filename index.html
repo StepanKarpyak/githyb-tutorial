@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WebStudio</title>
+    <title>adaptive-menu</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -14,6 +14,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+        integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+        crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
 
 </head>
@@ -27,15 +35,40 @@
 
     </header>
     <main>
-        <ul>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-        </ul>
+        <div class="adaptive-menu">
+            <div class="adaptive-menu__container">
+                <button type="button" class="closed-btn adaptive-menu__container-close" data-menu-close>
+                    <svg class="mobile-close-icon">
+                        <use href="#"></use>
+                    </svg>
+                </button>
+                <ul class="adaptive-menu__list adaptive-menu__container">
+                    <li class="adaptive__main">
+                        <a class="adaptive__link" href="">ГОЛОВНА</a>
+                    </li>
+                    <li class="adaptive__main">
+                        <a class="adaptive__link" href="">ПОСЛУГИ</a>
+                    </li>
+                    <li class="adaptive-menu__main">
+                        <a class="adaptive-menu__link" href="">3D Моделювання</a>
+                    </li>
+                    <li class="adaptive-menu__main">
+                        <a class="adaptive-menu__link" href="">3D Сканування</a>
+                    </li>
+                    <li class="adaptive-menu__main">
+                        <a class="adaptive-menu__link" href="">3D Друк</a>
+                    </li>
+                    <li class="adaptive__main">
+                        <a class="adaptive__link" href="">ЗАМОВИТИ</a>
+                    </li>
+                    <li class="adaptive__main">
+                        <a class="adaptive__link" href="">КОНТАКТИ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
     </main>
 
 

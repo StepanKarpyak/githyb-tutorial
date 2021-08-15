@@ -1,0 +1,230 @@
+/* Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+/* Стили для обнуления верхних отступов у элементов */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+/* Класс для обнуления базовых свойств у списков (ul, ol) */
+li {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+/* Класс для обнуления базовых свойств у ссылок */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Класс для обнуления базовых свойств у кнопки */
+button {
+    border: none;
+    background: transparent;
+    color: inherit;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+/* Свойства для корректного отображения картинок */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Свойства для обнуления курсива у address */
+address {
+    font-style: normal;
+  /* or */
+    font-style: inherit;
+}
+
+body {
+    font-family: var(--primary-font);
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    width: 1px !important;
+    height: 1px !important;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+}
+
+.is-hidden {
+    pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.container,
+.header-container {
+    width: 320px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 690px;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .container {
+        width: 1100px;
+    }
+
+    .header-container {
+        width: 1320px;
+        padding: 0 10px;
+        margin: 0 auto;
+    }
+}
+
+:root {
+    --main-text-color: #2b2b2b;
+    --secondary-text-color: #487996;
+    --primary-text-color: #008cef;
+    --button-bg: #f5f5fa;
+    --dec-element-shadow: 20px 20px 80px 0px #0000001a;
+    --primary-font: "Open Sans", sans-serif;
+    --secondary-font: "Lato", sans-serif;
+}
+
+.home-hero-title {
+    font-family: var(--primary-font);
+}
+
+
+
+/* ADAPTIVE MENU */
+/* .adaptive-menu {
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color:;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    pointer-events: none;
+} */
+
+
+.adaptive-menu {
+    background-color: #ffffff;
+}
+.adaptive-menu__container-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    line-height: 0;
+}
+.mobile-close-icon {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+        transition: color var(--animation);
+    }
+}
+.adaptive-menu__container {
+    width: 280px;
+    height: 568px;
+}
+@media screen and (min-width: 320px) {
+    .container__main-menu {
+        width: 280px;
+        height: 568px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .container__main-menu {
+        width: 768px;
+        height: 1024px;
+    }
+}
+
+.adaptive__link {
+    font-family: Lato;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.26;
+    
+    color: var(--secondary-text-color);
+    /* &:hover,
+    &:focus {
+        fill: #ffffff;
+        text-shadow: -1px 0 #487996, 0 1px #487996, 1px 0 #487996, 0 -1px #487996;
+    } */
+}
+.adaptive__link:hover,.adaptive__link:focus {
+    color: #ffffff;
+    /* border: 1px solid #487996; */
+    text-shadow: -1px 0 #487996, 0 1px #487996, 1px 0 #487996, 0 -1px #487996;
+}
+.adaptive-menu__link {
+    font-family: Lato;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.26;
+    /* text-align: center; */
+    color: var(--secondary-text-color);
+    /* &:hover,
+    &:focus {
+        fill: var(--button-bg);
+        transition: color var(--animation);
+    } */
+}
+.adaptive-menu__link:hover,.adaptive-menu__link:focus {
+    color: #ffffff;
+    text-shadow: -1px 0 #487996, 0 1px #487996, 1px 0 #487996, 0 -1px #487996;
+}
+.adaptive-menu__list {
+    margin-bottom: ;
+    text-align: center;
+}
+.adaptive-menu__main,
+.adaptive__main:not(:last-child) {
+    margin-bottom: 24px;
+}
