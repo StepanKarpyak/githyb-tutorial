@@ -151,6 +151,10 @@ body {
     margin: 0 auto;
     background-image: url(../images/main_menu/decor_mobile.png);
 }
+.adaptive-menu__heder{
+    width: 100vh;
+    height: 115px;
+}
 @media screen and (min-width: 320px) {
     .adaptive-menu {
         width: 320px;
@@ -158,7 +162,11 @@ body {
         padding-left: 20px;
         padding-right: 20px;
         
-    }    
+    } 
+    .adaptive-menu__heder{
+    width: 320px;
+    height: 115px;
+}   
 }
 @media screen and (min-width: 768px) {
     .adaptive-menu {
@@ -171,7 +179,10 @@ body {
     background-repeat: no-repeat;
     background-position: left 106px top 79px,right 32px top 79px,left 32px top 364px,right 32px top 303px;
     }    
-    
+    .adaptive-menu__heder{
+    width: 768px;
+    height: 115px;
+}
 }
 @media screen and (min-width: 1440px) {
     .adaptive-menu {
@@ -179,10 +190,7 @@ body {
     }
     
 }
-.adaptive-menu__heder{
-    width: 320px;
-    height: 115px;
-}
+
 
 .adaptive__link {
     display: flex;
