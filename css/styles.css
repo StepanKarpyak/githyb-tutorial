@@ -145,9 +145,10 @@ body {
 } */
 
 .adaptive-menu {
+    display: block;
     width: 100vh;
     height: 100vh;
-    background-color: #e5e5e5;
+    background-color: #ffffff;
     margin: 0 auto;
     background-image: url(../images/main_menu/decor_mobile.png);
 }
@@ -177,7 +178,7 @@ body {
         background-image: url(../images/main_menu/decor_tablet.png),url(../images/main_menu/Main_menu_tablet1.jpg),url(../images/main_menu/Main_menu_tablet2.jpg),
         url(../images/main_menu/Main_menu_tablet3.jpg),url(../images/main_menu/Main_menu_tablet4.jpg);
     background-repeat: no-repeat;
-    background-position: left 106px top 79px,right 32px top 79px,left 32px top 364px,right 32px top 303px;
+    background-position: center,left 106px top 79px,right 32px top 79px,left 32px top 364px,right 32px top 303px;
     }    
     .adaptive-menu__heder{
     width: 768px;
