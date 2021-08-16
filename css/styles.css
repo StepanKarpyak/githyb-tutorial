@@ -145,6 +145,7 @@ body {
 } */
 
 .adaptive-menu {
+    overflow: hidden;
     display: block;
     width: 100vh;
     height: 100vh;
