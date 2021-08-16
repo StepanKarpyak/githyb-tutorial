@@ -149,24 +149,25 @@ body {
     height: 100vh;
     background-color: #e5e5e5;
     margin: 0 auto;
-    
+    background-image: url(../images/decor_mobile.png);
 }
 @media screen and (min-width: 320px) {
     .adaptive-menu {
         width: 320px;
-        height: 100vh;
+        height: 568px;
         padding-left: 20px;
         padding-right: 20px;
+        
     }    
 }
 @media screen and (min-width: 768px) {
     .adaptive-menu {
         width: 768px;
-        height: 100vh;
+        height: 1024px;
         padding-left: 194px;
         padding-right: 194px;
         background-image: url(../images/main_menu/Main_menu_tablet1.jpg),url(../images/main_menu/Main_menu_tablet2.jpg),
-        url(../images/main_menu/Main_menu_tablet3.jpg),url(../images/main_menu/Main_menu_tablet4.jpg);
+        url(../images/main_menu/Main_menu_tablet3.jpg),url(../images/main_menu/Main_menu_tablet4.jpg),url(../images/decor_tablet.png);
     background-repeat: no-repeat;
     background-position: left 106px top 79px,right 32px top 79px,left 32px top 364px,right 32px top 303px;
     }    
